@@ -39,8 +39,12 @@ Scripts for verifying a processed set of annotation documents are provided withi
 These scripts were developed by Clement Feyt.
 
 ## Geolocation Analysis
+Scripts for visualizing the geographic distribution of a set of CCRs, based off locations indicated by their metadata and annotations, are provided in the folder *Geographic*.
+
+These scripts were developed by Kitu Komya and Clement Feyt.
 
 ## Term-based Analysis
+Scripts for preforming a term-based analysis of a set of processed, annotated CCRs are provided in the folder *Term Analysis*.
 
 ## Additional Resources
 Please see also:

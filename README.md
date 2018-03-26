@@ -43,6 +43,8 @@ Scripts for visualizing the geographic distribution of a set of CCRs, based off 
 
 These scripts were developed by Kitu Komya and Clement Feyt.
 
+See also https://github.com/Key2-Success/HeartBD2K-Geographic-Data.
+
 ## Term-based Analysis
 Scripts for preforming a term-based analysis of a set of processed, annotated CCRs are provided in the folder *Term Analysis*.
 

@@ -34,9 +34,13 @@ These scripts are compatible with Python 2 and 3. They require the following Pyt
 These scripts were developed by Sarah Spendlove.
 
 ## Verification
-Scripts for verifying a processed set of annotation documents are provided within the folder *Verification*.
+Scripts for verifying a processed set of annotation documents are provided within the folder *Verification*. The R script ***QualityControl.R*** should be run within the same directory as the processed annotation set (i.e., ACCRs.tsv). The functions within the script assume the existence of a comma-delimited annotation plan file containing, for each annotated record, the corresponding PMID and annotator. This allows for isolation of errors in the annotation process regarding target corpus coverage. Here, we have provided a blank annotation plan (***AnnotationPlan.csv***).
 
 These scripts were developed by Clement Feyt.
+
+## Geolocation Analysis
+
+## Term-based Analysis
 
 ## Additional Resources
 Please see also:

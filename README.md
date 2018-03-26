@@ -31,8 +31,12 @@ These scripts are compatible with Python 2 and 3. They require the following Pyt
 * **pandas**
 * **numpy**
 
+These scripts were developed by Sarah Spendlove.
+
 ## Verification
 Scripts for verifying a processed set of annotation documents are provided within the folder *Verification*.
+
+These scripts were developed by Clement Feyt.
 
 ## Additional Resources
 Please see also:

@@ -2,7 +2,7 @@
 This repository contains a set of Annotated Clinical Case Reports (ACCRs) along with associated scripts for processing and verification of annotation metadata. 
 
 ## Data Set
-The full ACCR data set is provided in the folder *ACCRs*.
+The full ACCR data set is provided in the folder *Data*.
 All annotation data are provided in the file ***ACCRs.tsv***. This is a tab-delimited file of 60 columns, one header row, and 3,000 rows of data, where each row provides metadata and annotations for a single clinical case report (CCR).
 
 Please see ***ACCR_guide.md*** for explanations of all features provided in the ACCR data set.
@@ -32,6 +32,7 @@ These scripts are compatible with Python 2 and 3. They require the following Pyt
 * **numpy**
 
 ## Verification
+Scripts for verifying a processed set of annotation documents are provided within the folder *Verification*.
 
 ## Additional Resources
 Please see also:

@@ -2,14 +2,14 @@
 This repository contains documentation for the set of Annotated Clinical Case Reports (ACCRs) along with associated scripts for processing and verification of annotation metadata.
 
 ## Data Set
-The full ACCR data set is available at **TBD**.
+The full ACCR data set, as well as the associated citations, are available at **TBD**. They are not provided here.
 
 All annotation data are provided in the file ***ACCRs.tsv***. This is a tab-delimited file of 60 columns, one header row, and 3,000 rows of data, where each row provides metadata and annotations for a single clinical case report (CCR).
 
 Please see ***ACCR_guide.md*** for explanations of all features provided in the ACCR data set.
 
 ## Annotation Template
-The annotation template is provided within the folder *Template* in the file ***TEMPLATE.xlsx***. For consistency and interoperability, we recommend that all newly created annotation files use a filename of the following format:
+The annotation template is available at **TBD**. For consistency and interoperability, we recommend that all newly created annotation files use a filename of the following format:
 
 CCR[index]-[PMID]-metadata-[annotator].xlsx
 

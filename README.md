@@ -21,6 +21,9 @@ where
 
 [annotator] is the initials of the individual preparing the annotation.
 
+## Annotation Guide
+An annotation guide is provided in ***Annotation_Guide.md*** for the purposes of understanding creation of the ACCR set, creation of new annotation sets similar to those within the ACCR set, and identification of features common to clinical case reports.
+
 ## Processing
 Scripts for processing a set of annotation documents prepared using the annotation template are provided within the folder *Processing*. Both scripts, ***Extract.py*** and ***ExtractFunctions.py***, should be placed within and run from the same directory as a folder entitled "AnnotatedFiles" (alternatively, edit the inputDirectoryPath value of Extract.py to use a different folder name).
 

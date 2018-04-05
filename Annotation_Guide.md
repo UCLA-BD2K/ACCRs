@@ -17,6 +17,8 @@ Fields marked as (internal use) are those not provided with the ACCR set but des
 * Access date (Internal use). This field may be used to specify the date on which a document was read and annotated. The exact format of this date is not critical but should be consistent between annotations. Example: *6/28/2017*
 
 ## Case Report Identification (Findable)
+Values in this category provide document-level features.
+
 * Title. The title of the document. For consistency, this should be identical to the title used in the PubMed citation. Example: *Case report: a case of severe illness.*
 * Authors. The authors of the document. For consistency, this should be identical to the author format used in the PubMed citation but separated with semicolons, such that *Firstname A. Lastname, Authortwo B. Secondlastname* is rendered as this example: *Lastname FA;Secondlastname AB*
 * Year. The year of publication of the document. For consistency, this should be identical to the year specified in the PubMed citation. Example: *1994*
@@ -26,12 +28,19 @@ Fields marked as (internal use) are those not provided with the ACCR set but des
 * PMID. Identical to that specified above. Example: *29999555*
 * DOI. A Digital Object Identifier, resolvable to the document (through https://www.doi.org/) and provided by the publisher. The DOI should refer to the URL of the document as provided by the publisher, not a PubMed Central page. DOIs may not be available for all documents. Example: *10.3928/00904481-20155555-03* (not a real DOI)
 * Link. A stable URL to the full text of the document, generally the PubMed Central version for purposes of consistency.
-* Language(s)
+* Language(s). (Internal use). This field may be used to identify a document's primary language. Example: *english*
 
 ## Medical content (Accessable, Interoperable, Reusable)
-* Key Words
-* Demography
-* Geographic Locations 
+Values in this category identify document-level, concept-level, and text-level features. These features provide ways to observe conceptual and semantic similarities between document contents, with a focus on medical topics and events.
+
+* Key Words. Specific terms identified within a document, usually in its header, as key terms. Separate by semicolons. May be identical to MeSH terms provided through PubMed. Example: *barth syndrome; cardiomyopathy; 3-methylglutaconic acid*
+* Demography. Values provided here should be any text statements describing the patient's background, including sex, age, ethnicity, or nationality. In practice, this nearly always includes age and sex, though the document may not provide these or further details. In the ACCR set, this field is processed further into Age and Gender using regular expressions to account for differences in formatting. Processing follows the following rules; these may be used as part of a processing script or used consistently in the course of manual annotation.
+  1. Ages are integers indicating number of years of age. Ages expressed as words (e.g. *twelve*) are converted to integers.
+  2. Patients less than 1 year of age are assigned an age of 0.
+  3. If a decade category of age is provided, estimate the patient's age to be in the middle of the decade, e.g. a patient in his or her *50's* or *fifties* is estimated to be 55.
+
+
+* Geographic Locations.
 * Life Style
 * Medical History Taking-Family history
 * Social Work

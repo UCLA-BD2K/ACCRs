@@ -6,7 +6,7 @@ The full ACCR data set, as well as the associated citations, are available at **
 
 All annotation data are provided in the file ***ACCRs.tsv***. This is a tab-delimited file of 60 columns, one header row, and 3,000 rows of data, where each row provides metadata and annotations for a single clinical case report (CCR).
 
-Please see ***ACCR_guide.md*** for explanations of all features provided in the ACCR data set.
+Please see Annotation Guide section below for details of all features provided in the ACCR data set.
 
 ## Annotation Template
 The annotation template is available at **TBD**. For consistency and interoperability, we recommend that all newly created annotation files use a filename of the following format:

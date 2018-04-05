@@ -34,7 +34,10 @@ Values in this category provide document-level features.
 Values in this category identify document-level, concept-level, and text-level features. These features provide ways to observe conceptual and semantic similarities between document contents, with a focus on medical topics and events.
 
 * Key Words. Specific terms identified within a document, usually in its header, as key terms. Separate by semicolons. May be identical to MeSH terms provided through PubMed. Example: *barth syndrome; cardiomyopathy; 3-methylglutaconic acid*
-* Demography. Values provided here should be any text statements describing the patient's background, including sex, age, ethnicity, or nationality. In practice, this nearly always includes age and sex, though the document may not provide these or further details. In the ACCR set, this field is processed further into Age and Gender using regular expressions to account for differences in formatting. Processing follows the following rules; these may be used as part of a processing script or used consistently in the course of manual annotation.
+* Demography. Values provided here should be any text statements describing the patient's background, including sex, age, ethnicity, or nationality. In practice, this nearly always includes age and sex, though the document may not provide these or further details. Unprocessed example: *46-year-old; female*
+
+  In the ACCR set, this field is processed further into Age and Gender using regular expressions to account for differences in formatting. Processing follows the following rules; these may be used as part of a processing script or used consistently in the course of manual annotation. 
+
   1. Ages are integers indicating number of years of age. Ages expressed as words (e.g. *twelve*) are converted to integers.
   2. Patients less than 1 year of age are assigned an age of 0.
   3. If a decade category of age is provided, estimate the patient's age to be in the middle of the decade, e.g. a patient in his or her *50's* or *fifties* is estimated to be 55.

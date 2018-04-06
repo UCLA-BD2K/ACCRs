@@ -7,6 +7,8 @@ As this guide primarily describes how to annotate clinical case reports, the dat
 
 Data types without corresponding values in a given document may be left blank or specified as "NA". For most fields, unless specified otherwise, separate values are separated by semicolons. This is compatible with semicolons contained within original text in that the punctuation already denotes a distinct concept or idea.
 
+Values provided through manual annotation process will generally require cleaning and additional processing prior to analysis. For the ACCR set, this processing step includes standardization of values (e.g., patient ages described in words are identified using regular expressions, then converted to numerical values) and steps to increase consistency among words and phrases (e.g., most text values are converted to lowercase characters only).
+
 Fields marked as (internal use) are those not provided with the ACCR set but designed for focused tasks.
 
 ## Scoring
@@ -85,18 +87,63 @@ Values in this category identify document-level, concept-level, and text-level f
 
   *a papulo-pustular rash and Raynaud’s phenomenon; extreme fatigue, pale stools, dark urine and pruritus*
 
-* Comorbidity
-* Diagnostic Techniques and Procedures
-* Diagnosis
-* Laboratory Values
-* Pathology
-* Drug Therapy
-* Therapeutics
-* Patient Outcome Assessment
-* Diagnostic Imaging/Videotape Recording
-* Relationship to other Case Reports
-* Relationship with Clinical Trial
-* Crosslink with Database
+* Comorbidity. Values should include any terms or phrases describing distinct diseases present at the time of initial clinical presentation. There is likely overlap between these values and those in clinical history, though Comorbidity should not include terms identical to those in the Diagnosis. Examples: *hypertension*, *becker muscular dystrophy*
+
+* Diagnostic Techniques and Procedures. Values should include any text statements describing medical procedures done for diagnostic purposes, including examinations, tests, and imaging. These values should not include quantitative results of lab tests as these should be used in Laboratory Values. Similarly, pathology results should go in the Pathology section, but the procedures performed to obtain samples (e.g., biopsy) and those used in the course of analyses are appropriate for Diagnostic Techniques and Procedures. Examples:
+
+  *xray; spinal MRI; abdominal ultrasound; iliac bone biopsy*
+
+  *electrocardiogram; contrast enhanced computed tomography; coronary angiography; endomyocardial biopsy*
+
+* Diagnosis. Values should include any text statements describing diagnoses of disease, even if the final diagnosis is ambiguous. Examples:
+
+  *aspergillosis; maxillary sinusitis*
+
+  *diffuse right-sided facial soft tissue infection, mastoid effusion and temporal lobe cerebritis; septic lung metastases*
+
+* Laboratory Values. Values should include names of diagnostic tests, their values, and conditions under which they were performed. This will involve overlap with terms used in the Diagnostic Techniques and Procedures data type. Values should be numerical but qualitative values (e.g., *complete blood count was within normal limits*) are acceptable. If the names of diagnostic tests are not provided, terms describing the results (e.g., *leukopenia*) may be used, though they should also be present in the Signs and Symptoms. Examples:
+
+  *white blood cell count, 6,200 /μl; hemoglobin level, 12.5 g/dl; mean corpuscular volume, 88.4; platelet count, 230,000 /μl; sodium level, 136 meq/l*
+  
+  *laboratory tests (complete blood count, urine analysis, blood electrolytes, liver, and renal function tests) were normal*
+
+* Pathology. Values should include any text statements describing results of pathology and histology studies, including gross pathology, immunology, and microscopy studies. Terms may overlap with those used in Diagnostic Techniques and Procedures. Examples:
+
+  *the left superior parathyroid was small, was partially removed, and was confirmed by biopsy to be normal parathyroid tissue*
+  
+  *uterine tumor (measuring 26×12×12 cm in size and weighing 1.8 kg) occupied a large part of the pelvic cavity; giant tumor showed necrotic changes, and had infiltrated the gall-bladder. there was neither the presence of a lymph node nor distant metastasis*
+
+* Drug Therapy. Values should include any text statements describing pharmaceutical therapies used in the course of treatment, including general terms such as *antibiotics* or specific drug terms. Values should also include descriptions of when and how drug therapies were stopped. Examples: 
+
+  *methylprednisolone; prednisone*
+
+  *therapy was initiated with meropenem hydrate (1.5 g/day), dopamine hydrochloride (3 μg/kg/min) and nafamostat mesylate (0.07 mg/kg/hr). meropenem hydrate was used until day 14, after which sulfamethoxazole (administered through the njt/gd) was employed.  dopamine hydrochloride was discontinued from day 3 and nafamostat mesylate from day 5*
+
+* Therapeutics. Values should include any text statements describing therapeutic procecures used in the course of treatment, including surgeries, implantation of medical devices, and procedures done to facilitate other therapies. Values should also include descriptions of when and how ongoing therapeutic procedures were stopped, if necessary. Examples:
+
+  *venesection; thrombectomy of the right coronary arteria; coronary stenting*
+  
+  *spinal tap; trephination was performed, with partial resection of the right frontal lesion; radiotherapy*
+  
+* Patient Outcome Assessment. Values should include any text statements describing health of the patient as of the end of the clinical presentation described in the report, including any follow-up tests. Examples:
+
+  *to date, 29 months post surgery, the patient is without clinical evidence of disease and is functionally performing well. She is followed as an outpatient every 6 months*
+  
+  *died 36 hours later due to progressive cardiac failure*
+
+* Diagnostic Imaging/Figures/Videotape Recording/Tables. Values in this field should include all counts of visual media included in the report, in the following format:
+  
+  Count of images;Count of figures;Count of videos or animations;Count of tables
+  
+  We make the distinction between images and figures in this way: images include any products of clinical diagnostics, including photographs, micrographs, electrocardiogram rhythm images, and other products of diagnostic imaging, while figures are all other images, generally including those data plots and illustrations.
+  
+  Example: *4;1;0;1*
+  
+* Relationship to other Case Reports. (Internal use). This field may include identifiers of other reports in the data set cited by or referencing this report. Example: *27746431*
+
+* Relationship with Clinical Trial. (Internal use).  This field may include identifiers of clinical trials involved with this report in some fashion. Trials should be identified by their ClinicalTrials.gov identifiers, preceded by NCT. Example: *NCT00000555*
+
+* Crosslink with Database. (Internal use). This field may include identifiers, preferably as database names and stable URLs, linking to this report. Example: *2 MedlinePlus Health Information:https://medlineplus.gov/lupus.html; 1 Genetic Alliance:http://www.diseaseinfosearch.org/result/4336*
 
 ## Acknowledgements
 * Funding source

@@ -146,8 +146,13 @@ Values in this category identify document-level, concept-level, and text-level f
 * Crosslink with Database. (Internal use). This field may include identifiers, preferably as database names and stable URLs, linking to this report. Example: *2 MedlinePlus Health Information:https://medlineplus.gov/lupus.html; 1 Genetic Alliance:http://www.diseaseinfosearch.org/result/4336*
 
 ## Acknowledgements
-* Funding source
-* Award number
-* Disclosures/Conflict of interest
-* References
+Values provided in this category provide additional details about the document (i.e., metadata).
+
+* Funding Source. Values in this field describe government entities or organizations providing funding for the publication. In some cases, the document may explicitly state that no outside funding was provided. Example: *the work was supported by grants from the Muscular Dystrophy Association* 
+
+* Award number. Values in this field provide identifiers, if any, corresponding to specific financial support from the entities specified in Funding Source. In some cases, award numbers may not be specified; if cases are ambiguous, provide details in both this data type and in Funding Source. Example: *HD32062 from the National Institutes of Health*
+
+* Disclosures/Conflict of interest. Values in this field include any text descriptions or statements regarding financial disclosures and those of conflicts of interest. In many cases, authors explicitly state they have no conflicts of interest to declare. Example: *Dr. Lastname has received research support from MedicalCo and DrugCo*
+
+* References. This field should contain a numerical value providing a count of all references cited. Do not include reference text in this field. Example: *12*.
 

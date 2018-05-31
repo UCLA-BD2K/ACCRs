@@ -1,7 +1,7 @@
 # Annotation Guide for Annotated Clinical Case Reports (ACCRs)
 
 ## Introduction
-This Guide contains a list of data types identified in the process of assembling the ACCR data set, along with guidelines for what types of text or numerical values were used in each type and details regarding data processing and cleaning procedures. Though this process may be adapted for future studies, this Guide specifically describes how we prepared the ACCR set. As our post-processing workflow enforces additional structure on some values (e.g., Demographics), the categories in the full ACCR file do not fully correspond to those in the annotation template. All columns in the ACCR file are described below (or, where appropriate, are noted to directly correspond to those in the template).
+This Guide contains a list of data types identified in the process of assembling the ACCR data set, along with guidelines for what types of text or numerical values were used in each type and details regarding data processing and cleaning procedures. Though this process may be adapted for future studies, this Guide specifically describes how we prepared the ACCR set. As our post-processing workflow enforces additional structure on some values (e.g., Demographics), the categories in the full ACCR file do not fully correspond to those in the annotation template. All columns in the ACCR file are described in the file ***ACCR_File_Guide.md*** in this repository.
 
 ## Manual Annotation with the Template
 We have arranged the annotation types into four general categories: document and annotation indentification values, case report identification values (i.e., document-level properties), medical content concepts (for the most part, these are concept-level properties) and acknowledgements (i.e., text within each document linking it to other organizations and publications). A single set of values corresponds to those identified in a single document. The data types listed here are those we have determined to be most descriptive for clinical case reports and patient-focused medical documents in general. Our goal is also to follow FAIR principles in establishing structure on case report text and have identified the corresponding principles in two of the categories provided below.
@@ -179,7 +179,3 @@ The following was done to ensure consistency within the dataset:
 * All fields were checked to ensure no material was in the wrong field (e.g., symptoms in the Funding Source category) and that semicolons were used as delimiters wherever possible.
 * All text was confirmed to be in English.
 * Common phrases were removed from the beginning and end of text segments in the Medical Content section where present, e.g. "she presented with a headache" became "headache" and "we performed a biopsy" became "biopsy".
-
-## Contents of the ACCR File
-TBD
-

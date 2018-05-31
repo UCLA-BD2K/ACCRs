@@ -8,6 +8,9 @@ We have arranged the annotation types into four general categories: document and
 
 Data types without corresponding values in a given document may be left blank or specified as "NA". For most fields, unless specified otherwise, separate values are separated by semicolons. This is compatible with semicolons contained within original text in that the punctuation already denotes a distinct concept or idea.
 
+### Scoring and Template Usage
+The Template contains two columns (the first and second) for scores and two columns (third and fourth) for all text values. For each CCR, annotators provided text values from the full text document in the third column and values available in the PubMed citation in the fourth column (not including abstract text, but including MeSH terms corresponding to each category). The template then provides a score for both columns and each category, such that any value provided yields a score of 1. This score is intended to provide an approximation of which categories contain any relevant text value for a given document and do not provide any metric of the quality or usability of those values. For the Case Report Identification section, all values will be functionally identical between PubMed citation details and the full text. 
+
 ### Document and Annotation Identification
 * **Internal ID**. All documents were assigned an identifier for this project, from CCR001 to CCR3000.
 * **Access date** The date (day, month, and year) on which each document was read and annotated was recorded here in a variety of formats. Example: *6/28/2017*
@@ -137,19 +140,16 @@ For these values, annotators recorded:
 Values provided in this category provide additional details about the document (i.e., metadata).
 
 For these values, annotators recorded:
-* **Funding Source**. Any text indicating government entities or organizations providing funding for the publication, or explicit statements that no outside funding was provided. Example: *the work was supported by grants from the Muscular Dystrophy Association* 
+* **Funding Source**. Any text indicating government entities or organizations providing funding for the publication, or explicit statements that no outside funding was provided. Where appropriate and specified in the document, these values include initials of grant recipients in parentheses. Example: *the work was supported by grants from the Muscular Dystrophy Association (to fs)* 
 
-* **Award number**. Identifiers, if any, corresponding to specific financial support from the entities specified in Funding Source. Where appropriate,  Example: *HD32062 from the National Institutes of Health*
+* **Award number**. Identifiers, if any, corresponding to specific financial support from the entities specified in Funding Source.  Example: *HD32062 from the National Institutes of Health*
 
 * **Disclosures/Conflict of interest**. Any text descriptions or statements regarding financial disclosures and those of conflicts of interest, or explicit statements that authors have no conflicts of interest to declare. Example: *Dr. Lastname has received research support from MedicalCo and DrugCo*
 
 * **References**. A numerical value providing a count of all references cited. Reference text is not included. Example: *12*.
 
-### Scoring
-TBD
-
 ## Post-processing
-TBD
+
 ### Automated processing
 All text values, with the exception of those in Title and Author, were converted to all lowercase characters to improve word-level comparisons.
 
@@ -162,13 +162,20 @@ Values in Demography were processed further into Age and Gender using regular ex
 
 ### Manual cleaning
 The following was done to ensure consistency within the dataset:
+* CCR ID numbers (e.g., CCR123) were checked to ensure consistency.
 * All dates were converted to a consistent format of YYYY-MM-DD.
 * Titles were checked against PubMed citations to ensure they were identical.
 * Author names were checked against PubMed citations, normalized for format (separated with semicolons, such that *Firstname A. Lastname, Authortwo B. Secondlastname* is rendered as *Lastname FA;Secondlastname AB*)
 * Years were checked against the publication year specified in the PubMed citation.
 * Journal titles were normalized to those specified by the NLM Catalog (https://www.ncbi.nlm.nih.gov/nlmcatalog). For example, *International journal of cardiology* was preferable to *Int J Cardiol* or *Int. J. Cardiol.* "The" was omitted from the prefix of journal names, such that *The Lancet* became *Lancet*.
+* Institutions 
 * DOIs were obtained where possible and for documents without DOIs provided in the document or its PubMed citation. These DOIs correspond to the publisher's version of the full text of each CCR.
 * Links were added where missing. In most cases, these are doi.org URLs, but in cases where DOIs are not available, direct links to articles on PubMed Central or publisher sites were used.
+* Disease category counts were checked to ensure they reflected the categories provided during annotation.
+* Image and media counts were checked in instances where they appeared unexpectedly large.
+* Demographic values were corrected where needed, to account for any remaining non-numeric age values and any non-binary gender values not normalized during automated processing.
+* All fields were checked to ensure no material was in the wrong field (e.g., symptoms in the Funding Source category) and that semicolons were used as delimiters wherever possible.
+* All text was confirmed to be in English.
 * Common phrases were removed from the beginning and end of text segments in the Medical Content section where present, e.g. "she presented with a headache" became "headache" and "we performed a biopsy" became "biopsy".
 
 ## Contents of the ACCR File

@@ -101,13 +101,13 @@ For these values, annotators recorded:
   
   *uterine tumor (measuring 26×12×12 cm in size and weighing 1.8 kg) occupied a large part of the pelvic cavity; giant tumor showed necrotic changes, and had infiltrated the gall-bladder. there was neither the presence of a lymph node nor distant metastasis*
 
-* **Drug Therapy**. Any text statements describing pharmaceutical therapies used in the course of treatment, including general terms such as *antibiotics* or specific drug terms. Values should also include descriptions of when and how drug therapies were stopped. Examples: 
+* **Pharmacological Therapy**. Any text statements describing pharmaceutical therapies used in the course of treatment, including general terms such as *antibiotics* or specific drug terms. Values should also include descriptions of when and how drug therapies were stopped. Examples: 
 
   *methylprednisolone; prednisone*
 
   *therapy was initiated with meropenem hydrate (1.5 g/day), dopamine hydrochloride (3 μg/kg/min) and nafamostat mesylate (0.07 mg/kg/hr). meropenem hydrate was used until day 14, after which sulfamethoxazole (administered through the njt/gd) was employed.  dopamine hydrochloride was discontinued from day 3 and nafamostat mesylate from day 5*
 
-* **Therapeutics**. Any text statements describing therapeutic procecures used in the course of treatment, including surgeries, implantation of medical devices, and procedures done to facilitate other therapies. Values should also include descriptions of when and how ongoing therapeutic procedures were stopped, if necessary. Examples:
+* **Interventional Therapy**. Any text statements describing therapeutic procecures used in the course of treatment, including surgeries, implantation of medical devices, and procedures done to facilitate other therapies. Values should also include descriptions of when and how ongoing therapeutic procedures were stopped, if necessary. Examples:
 
   *venesection; thrombectomy of the right coronary arteria; coronary stenting*
   
@@ -131,18 +131,19 @@ For these values, annotators recorded:
 
 * **Relationship with Clinical Trial**. Identifiers of clinical trials referencing this report, specifically their ClinicalTrials.gov identifiers, preceded by NCT. Example: *NCT00000555*
 
-* **Crosslink with Database**. (Internal use). This field may include identifiers, preferably as database names and stable URLs, linking to this report. Example: *2 MedlinePlus Health Information:https://medlineplus.gov/lupus.html; 1 Genetic Alliance:http://www.diseaseinfosearch.org/result/4336*
+* **Crosslink with Database**. Identifiers, preferably as database names and stable URLs, linking to this report. Example: *2 MedlinePlus Health Information:https://medlineplus.gov/lupus.html; 1 Genetic Alliance:http://www.diseaseinfosearch.org/result/4336*
 
 ### Acknowledgements
 Values provided in this category provide additional details about the document (i.e., metadata).
 
-* **Funding Source**. Values in this field describe government entities or organizations providing funding for the publication. In some cases, the document may explicitly state that no outside funding was provided. Example: *the work was supported by grants from the Muscular Dystrophy Association* 
+For these values, annotators recorded:
+* **Funding Source**. Any text indicating government entities or organizations providing funding for the publication, or explicit statements that no outside funding was provided. Example: *the work was supported by grants from the Muscular Dystrophy Association* 
 
-* **Award number**. Values in this field provide identifiers, if any, corresponding to specific financial support from the entities specified in Funding Source. In some cases, award numbers may not be specified; if cases are ambiguous, provide details in both this data type and in Funding Source. Example: *HD32062 from the National Institutes of Health*
+* **Award number**. Identifiers, if any, corresponding to specific financial support from the entities specified in Funding Source. Where appropriate,  Example: *HD32062 from the National Institutes of Health*
 
-* **Disclosures/Conflict of interest**. Values in this field include any text descriptions or statements regarding financial disclosures and those of conflicts of interest. In many cases, authors explicitly state they have no conflicts of interest to declare. Example: *Dr. Lastname has received research support from MedicalCo and DrugCo*
+* **Disclosures/Conflict of interest**. Any text descriptions or statements regarding financial disclosures and those of conflicts of interest, or explicit statements that authors have no conflicts of interest to declare. Example: *Dr. Lastname has received research support from MedicalCo and DrugCo*
 
-* **References**. This field should contain a numerical value providing a count of all references cited. Do not include reference text in this field. Example: *12*.
+* **References**. A numerical value providing a count of all references cited. Reference text is not included. Example: *12*.
 
 ### Scoring
 TBD

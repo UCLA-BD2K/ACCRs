@@ -1,25 +1,28 @@
 # ACCRs 
 This repository contains documentation for the set of Annotated Clinical Case Reports (ACCRs) along with associated scripts for processing and verification of annotation metadata.
 
-## Data Set
-The full ACCR data set, as well as the associated citations, are available at **TBD**. They are not provided here.
+Data files are not provided in this repository. They are available on Figshare at **TBD**.
+They are described in brief here.
 
-All annotation data are provided in the file ***ACCRs.tsv***. This is a tab-delimited file of 60 columns, one header row, and 3,000 rows of data, where each row provides metadata and annotations for a single clinical case report (CCR).
+## ACCR Data Files
+### Data Set
+This file, ***ACCRs.tsv***, contains the full ACCR data set.
 
-Please see Annotation Guide section below for details of all features provided in the ACCR data set.
+All annotation data are provided in this file. This is a tab-delimited file of 58 columns, one header row, and 3,000 rows of data, where each row provides metadata and annotations for a single clinical case report (CCR).
 
-## Annotation Template
-The annotation template is available at **TBD**. For consistency and interoperability, we recommend that all newly created annotation files use a filename of the following format:
+Please see the Annotation Guide in this repository for details of all features provided in ***ACCRs.tsv***.
 
-CCR[index]-[PMID]-metadata-[annotator].xlsx
+### Citations
+Citations for all clinical case reports used in the assembly of the ACCR set are available in the file ***ACCR_citations.bib***. This file is in [BibTeX format](http://www.bibtex.org/Format/).
 
-where 
+### Annotation Template
+The annotation template is available at in **TEMPLATE.xlsx**. This is an Excel format spreadsheet; we have found this format to be easiest for annotators to use. 
 
-[index] is a unique numberical value specific to this annotation file, 
+### Rare Mitochondrial Disease Subset
+The Rare Mitochondrial Disease, or RMD, subset of the ACCRs includes 246 reports concerning a selection of seven diseases with mitochondrial etiologies. This subset includes two tab-delimited files: ***ACCR_RMD_ICD10.tsv***, or the code file, and ***ACCR_RMD_ICD10_Categories.tsv***, the category file. Both files contain a header row, values corresponding to a sincle CCR per subsequent row, an identifying PubMed ID in the first column, and the name of a RMD in the second column. In the code file, each subsequent column provides a binary value indicating whether the [ICD-10-CM code](https://www.cdc.gov/nchs/icd/icd10cm.htm) in the header row is appropriate for the events described within the CCR. In the categories file, the header row contains names of 20 chapters of the ICD-10-CM codes, with values indicating whether at least one code in the corresponding code block has a value of '1' in the code file.
 
-[PMID] is the PubMed idenfifier of the annotated document, and
-
-[annotator] is the initials of the individual preparing the annotation.
+### MeSH Term List
+A list of all MeSH terms, with one unique term per list, is available in the tab-delimited file ***ACCR_mesh.tsv***. Each row includes a single MeSH term (as per the [2018 MeSH Terminology](https://www.nlm.nih.gov/mesh/filelist.html)) in the first column and a single letter indicating the corresponding section of the [MeSH Tree](https://meshb.nlm.nih.gov/treeView).
 
 ## Annotation Guide
 An annotation guide is provided in ***Annotation_Guide.md*** for the purposes of understanding creation of the ACCR set, creation of new annotation sets similar to those within the ACCR set, and identification of features common to clinical case reports.

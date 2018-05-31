@@ -1,7 +1,7 @@
 # ACCRs 
 This repository contains documentation for the set of Annotated Clinical Case Reports (ACCRs) along with associated scripts for processing and verification of annotation metadata.
 
-Data files are not provided in this repository. They are available on Figshare at **TBD**.
+Data files are not provided in this repository but are available on Figshare at **TBD**.
 They are described in brief here.
 
 ## ACCR Data Files
@@ -16,7 +16,7 @@ Please see the Annotation Guide in this repository for details of all features p
 Citations for all clinical case reports used in the assembly of the ACCR set are available in the file ***ACCR_citations.bib***. This file is in [BibTeX format](http://www.bibtex.org/Format/).
 
 ### Annotation Template
-The annotation template is available at in **TEMPLATE.xlsx**. This is an Excel format spreadsheet; we have found this format to be easiest for annotators to use. 
+The annotation template is available at in ***TEMPLATE.xlsx***. This is an Excel format spreadsheet; we have found this format to be easiest for annotators to use. 
 
 ### Rare Mitochondrial Disease Subset
 The Rare Mitochondrial Disease, or RMD, subset of the ACCRs includes 246 reports concerning a selection of seven diseases with mitochondrial etiologies. This subset includes two tab-delimited files: ***ACCR_RMD_ICD10.tsv***, or the code file, and ***ACCR_RMD_ICD10_Categories.tsv***, the category file. Both files contain a header row, values corresponding to a sincle CCR per subsequent row, an identifying PubMed ID in the first column, and the name of a RMD in the second column. In the code file, each subsequent column provides a binary value indicating whether the [ICD-10-CM code](https://www.cdc.gov/nchs/icd/icd10cm.htm) in the header row is appropriate for the events described within the CCR. In the categories file, the header row contains names of 20 chapters of the ICD-10-CM codes, with values indicating whether at least one code in the corresponding code block has a value of '1' in the code file.

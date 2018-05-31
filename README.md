@@ -4,6 +4,9 @@ This repository contains documentation for the set of Annotated Clinical Case Re
 Data files are not provided in this repository but are available on Figshare at **TBD**.
 They are described in brief here.
 
+## Annotation Guide
+An annotation guide is provided in ***Annotation_Guide.md*** for the purposes of understanding creation of the ACCR set.
+
 ## ACCR Data Files
 ### Data Set
 This file, ***ACCRs.tsv***, contains the full ACCR data set.
@@ -23,9 +26,6 @@ The Rare Mitochondrial Disease, or RMD, subset of the ACCRs includes 246 reports
 
 ### MeSH Term List
 A list of all MeSH terms, with one unique term per list, is available in the tab-delimited file ***ACCR_mesh.tsv***. Each row includes a single MeSH term (as per the [2018 MeSH Terminology](https://www.nlm.nih.gov/mesh/filelist.html)) in the first column and a single letter indicating the corresponding section of the [MeSH Tree](https://meshb.nlm.nih.gov/treeView).
-
-## Annotation Guide
-An annotation guide is provided in ***Annotation_Guide.md*** for the purposes of understanding creation of the ACCR set, creation of new annotation sets similar to those within the ACCR set, and identification of features common to clinical case reports.
 
 ## Processing
 Scripts for processing a set of annotation documents prepared using the annotation template are provided within the folder *Processing*. Both scripts, ***Extract.py*** and ***ExtractFunctions.py***, should be placed within and run from the same directory as a folder entitled "AnnotatedFiles" (alternatively, edit the inputDirectoryPath value of Extract.py to use a different folder name).

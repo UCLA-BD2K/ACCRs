@@ -13,7 +13,7 @@ This file, ***ACCRs.tsv***, contains the full ACCR data set.
 
 All annotation data are provided in this file. This is a tab-delimited file of 58 columns, one header row, and 3,000 rows of data, where each row provides metadata and annotations for a single clinical case report (CCR).
 
-Please see the Annotation Guide in this repository for details of all features provided in ***ACCRs.tsv***.
+Please see the ACCR File Guide (***ACCR_File_Guide.md***) in this repository for details of all features provided in ***ACCRs.tsv***.
 
 ### Citations
 Citations for all clinical case reports used in the assembly of the ACCR set are available in the file ***ACCR_citations.bib***. This file is in [BibTeX format](http://www.bibtex.org/Format/).

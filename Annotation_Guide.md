@@ -151,14 +151,15 @@ For these values, annotators recorded:
 ## Post-processing
 
 ### Automated processing
-All text values, with the exception of those in Title and Author, were converted to all lowercase characters to improve word-level comparisons.
-
-Values in Demography were processed further into Age and Gender using regular expressions. Processing followed the following rules:
-
+The automated processing workflow performed the following functions:
+* converted all text values, with the exception of those in Title and Author, to all lowercase characters to improve word-level comparisons.
+* processed Demography values into Age and Gender using regular expressions. Processing followed the following rules:
   1. Ages are integers indicating number of years of age. Ages expressed as words (e.g. *twelve*) are converted to integers.
   2. Patients less than 1 year of age are assigned an age of 0.
   3. If a decade category of age is provided, estimate the patient's age to be in the middle of the decade, e.g. a patient in his or her *50's* or *fifties* is estimated to be 55.
   4. Where specified, sex should be annotated as *male* or *female*. This binary categorization may be expanded as needed.
+ * assigned disease category membership based on category annotation.
+ * separated media counts into four categories.
 
 ### Manual cleaning
 The following was done to ensure consistency within the dataset:

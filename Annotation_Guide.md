@@ -140,9 +140,9 @@ For these values, annotators recorded:
 Values provided in this category provide additional details about the document (i.e., metadata).
 
 For these values, annotators recorded:
-* **Funding Source**. Any text indicating government entities or organizations providing funding for the publication, or explicit statements that no outside funding was provided. Where appropriate and specified in the document, these values include initials of grant recipients in parentheses. Example: *the work was supported by grants from the Muscular Dystrophy Association (to fs)* 
+* **Funding Source**. Any text indicating government entities or organizations providing funding for the publication, or explicit statements that no outside funding was provided. Organization names are spelled out. Specific subgroups of large research organizations such as NIH are specified with a slash if they are noted within the source text. Multiple organizations are delimited with semicolons. Examples: *National Institutes of Health/National Center for Advancing Translational Sciences*, *American Cancer Society*, *The authors have no funding*
 
-* **Award number**. Identifiers, if any, corresponding to specific financial support from the entities specified in Funding Source.  Example: *HD32062 from the National Institutes of Health*
+* **Award number**. Identifiers, if any, corresponding to specific financial support from the entities specified in Funding Source.  Where appropriate and specified in the document, these values include initials of grant recipients in parentheses. Examples: *HD32062 (to AB)*, *Faculty research grant from the Fictional University College of Medicine (to ZP)*
 
 * **Disclosures/Conflict of interest**. Any text descriptions or statements regarding financial disclosures and those of conflicts of interest, or explicit statements that authors have no conflicts of interest to declare. Example: *Dr. Lastname has received research support from MedicalCo and DrugCo*
 
@@ -173,6 +173,7 @@ The following was done to ensure consistency within the dataset:
 * Institutions 
 * DOIs were obtained where possible and for documents without DOIs provided in the document or its PubMed citation. These DOIs correspond to the publisher's version of the full text of each CCR.
 * Links were added where missing. In most cases, these are doi.org URLs, but in cases where DOIs are not available, direct links to articles on PubMed Central or publisher sites were used.
+* Funding Source and Award Number values were normalized for format (in the first case, limited to organization names where possible, and in the second, limited to grant numbers/names and recipient initials).
 * Disease category counts were checked to ensure they reflected the categories provided during annotation.
 * Image and media counts were checked in instances where they appeared unexpectedly large.
 * Demographic values were corrected where needed, to account for any remaining non-numeric age values and any non-binary gender values not normalized during automated processing.

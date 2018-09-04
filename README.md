@@ -30,6 +30,11 @@ The Rare Mitochondrial Disease, or RMD, subset of the MACCRs includes 246 report
 ### MeSH Term List
 A list of all MeSH terms, with one unique term per list, is available in the tab-delimited file ***MACCR_mesh.tsv***. Each row includes a single MeSH term (as per the [2018 MeSH Terminology](https://www.nlm.nih.gov/mesh/filelist.html)) in the first column and a single letter indicating the corresponding section of the [MeSH Tree](https://meshb.nlm.nih.gov/treeView).
 
+### Named Entity List
+Lists of named entities from a controlled vocabulary (specifically, combined MeSH heading names and SNOMED-CT terms) were prepared for a selection of the MACCR medical content categories. For each PMID, provided in the first column, each subsequent column provides no value if no named entities could be identified based on the text in the corresponding MACCR entry and column. Otherwise, a list of entity names is provided. Please note that these results are representative named entity recogition (NER) output only and do not take context into account.
+
+We thank Kushagra Rastogi for his assistance with NER.
+
 ## Processing
 Scripts for processing a set of annotation documents prepared using the annotation template are provided within the folder *Processing*. Both scripts, ***Extract.py*** and ***ExtractFunctions.py***, should be placed within and run from the same directory as a folder entitled "AnnotatedFiles" (alternatively, edit the inputDirectoryPath value of Extract.py to use a different folder name).
 

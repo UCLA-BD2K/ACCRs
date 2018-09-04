@@ -1,4 +1,4 @@
-# Annotation Guide for Metadata Acquired from Clinical Case Reports (MACCRs)
+# Metadata Extraction Guide for Metadata Acquired from Clinical Case Reports (MACCRs)
 
 ## Introduction
 This Guide contains a list of data types identified in the process of assembling the MACCR data set, along with guidelines for what types of text or numerical values were used in each type and details regarding data processing and cleaning procedures. Though this process may be adapted for future studies, this Guide specifically describes how we prepared the MACCR set. As our post-processing workflow enforces additional structure on some values (e.g., Demographics), the categories in the full MACCR file do not fully correspond to those in the annotation template. All columns in the MACCR file are described in the file ***MACCR_File_Guide.md*** in this repository.

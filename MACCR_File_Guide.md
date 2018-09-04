@@ -1,7 +1,7 @@
-# Guide to Contents of the Annotated Clinical Case Reports (ACCRs) Data File
+# Guide to Contents of the Metadata Acquired from Clinical Case Reports (MACCRs) Data File
 
 ## Introduction
-This Guide contains a list of data types contained within the ACCR data set. Most of these values correspond to those described as part of the annotation process; see the file ***Annotation_Guide.md*** for further details.
+This Guide contains a list of data types contained within the MACCR data set. Most of these values correspond to those described as part of the annotation process; see the file ***Annotation_Guide.md*** for further details.
 
 Fields may contain values of "NA" if no corresponding value for this category was found in or corresponding to a given document.
 

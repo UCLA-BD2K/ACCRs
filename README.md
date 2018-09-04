@@ -7,8 +7,8 @@ If you are reading this file on *Figshare* or *Dryad*, data files are available 
 If you are reading this file on Github, data files may be obtained from one of the above locations.
 The data files are described in brief here.
 
-## Annotation Guide
-An annotation guide is provided in ***Annotation_Guide.md*** for the purposes of understanding creation of the MACCR set.
+## Metadata Extraction Guide
+A guide is provided in ***Metadata_Extraction_Guide.md*** for the purposes of understanding creation of the MACCR set.
 
 ## ACCR Data Files
 ### Data Set

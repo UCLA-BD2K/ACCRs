@@ -1,13 +1,13 @@
 # Guide to Contents of the Metadata Acquired from Clinical Case Reports (MACCRs) Data File
 
 ## Introduction
-This Guide contains a list of data types contained within the MACCR data set. Most of these values correspond to those described as part of the annotation process; see the file ***Annotation_Guide.md*** for further details.
+This Guide contains a list of data types contained within the MACCR data set. Most of these values correspond to those described as part of the annotation process; see the file ***Annotation_Guide.pdf*** for further details.
 
 Fields may contain values of "NA" if no corresponding value for this category was found in or corresponding to a given document.
 
 If not otherwise specified, values are those obtained from manual annotation, post-processed, and cleaned as specified in the Annotation Guide. For Disease Category columns, values are binary, with 1 indicating membership in the category and 0 indicating non-membership.
 
-## ACCR Data File contents
+## MACCR Data File contents
 Column | Title | Contents
 --- | --- | ---
 1 | *blank* | A number from zero to 2999 serving as an internal file index.
@@ -68,5 +68,3 @@ Column | Title | Contents
 56 | Videos | Count of videos and animations provided with the document.
 57 | Tables | Count of tables in the document, not counting supplmentary tables.
 58 | Contributor | Two-letter initials of the annotator for this document.
-
-

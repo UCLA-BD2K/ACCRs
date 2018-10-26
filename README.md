@@ -2,8 +2,11 @@
 This repository contains documentation for the set of Metadata Acquired from Clinical Case Reports (MACCRs) along with associated scripts for processing and verification of annotation metadata.
 
 If you are accessing the data through [*Figshare*](https://doi.org/10.6084/m9.figshare.c.4220324.v2), data files are available here.
+
 If you are accessing the data through *Dryad*, some data files are available here. The remainder are provided as external links (see below). 
+
 If you are reading this file on Github, data files may be obtained from one of the above locations.
+
 The data files are described in brief here.
 
 ## Metadata Extraction Guide
@@ -64,4 +67,4 @@ Please see also:
 * [heartCases](https://github.com/caufieldjh/heartCases), an automated system for retreiving and working with MEDLINE-indexed clinical case reports
 
 ## Citation
-Caufield, J.H. **et al.** A reference set of curated biomedical data and metadata from clinical case reports. **Sci. Data** 5, 180258 (2018). (Article in press.) DOI: 10.1038/sdata.2018.258
+Caufield, J.H. *et al.* A reference set of curated biomedical data and metadata from clinical case reports. *Sci. Data* 5, 180258 (2018). (Article in press.) DOI: 10.1038/sdata.2018.258
